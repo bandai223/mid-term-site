@@ -101,9 +101,9 @@ function Product() {
       <Table striped border hover className="my-3" ref={table}>
         <thead>
           <tr>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Delete</th>
+            <th>เมนูอาหาร</th>
+            <th>พลังงานที่ได้รับ</th>
+            <th>เลือกเมนูนี้</th>
           </tr>
         </thead>
         <tbody>
@@ -118,7 +118,7 @@ function Product() {
                 <td>{item[0]}</td>
                 <td>{item[1]}</td>
                 <td className="text-center">
-                  <Button variant="danger" onClick={() => DeleteRow(i)}>
+                  <Button type="button" class="btn btn-primary">
                     เลือกเมนูนี้
                   </Button>
                 </td>
