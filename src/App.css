@@ -1,6 +1,6 @@
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
 
 
 .link {
@@ -24,4 +24,9 @@ h3 {
 .food-text {
   font-family: 'Sarabun', sans-serif;
   font-style: normal;
+}
+.food-name {
+  font-family: 'Mitr', sans-serif;
+  font-style: normal;
+  padding-bottom: -1%;
 }
