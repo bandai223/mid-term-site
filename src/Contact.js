@@ -5,16 +5,8 @@ function Contact() {
   return (
     <>
       <Layout />
-      <h3>Ubon Ratchathani University</h3>
-      <div>
-        85 Sathonlamrk Road
-        <br />
-        Warin Chamrap District
-        <br />
-        Ubon Ractchathani
-        <br />
-        Thailand 34190
-      </div>
+      <p class="text-center fs-1 ">นายพงศ์ปณต แสงกล้า</p>
+      <p class="text-center fs-2">65114340565</p>
     </>
   );
 }

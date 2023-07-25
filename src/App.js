@@ -50,17 +50,26 @@ function Index() {
   return (
     <>
       <Layout />
-      <h3 ref={header1}>อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</h3>
+      <h3 class="pb-5 pt-3" ref={header1}>อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</h3>
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="card-01.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" />
+            <img src="card-01.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" width="200" height="200" />
+            <p class="food-text p-5 text-center fs-6">ธรรมชาติ มีคุณค่าทางสมุนไพรสูง เพราะมีคุณสมบัติในการบำรุงรักษาธาตุทั้ง 4 เพื่อให้สมดุลกัน กลีบบัวหลวง มีสีสันสวยงาม 
+            มีสรรพคุณบำรุงร่างกาย ห้ามเลือด มีเส้นใยอาหารสูง และกระตุ้นการขับถ่ายเป็นยาสมานแผล ช่วยบำรุงร่างกายบำรุงหัวใจ ลดความดันโลหิตสูง และลดระดับน้ำตาลในเลือดได้ </p>
+            <button type="button" class="btn btn-secondary food-text mx-auto d-block">เรียนรู้เพิ่มเติม> </button>
           </div>
           <div class="col">
-            <img src="card-05.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" />
+            <img src="card-05.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" width="200" height="200" />
+            <p class="food-text p-5 text-center fs-6">มีโปรตีนและแร่ธาตุต่างๆและสรรพคุณทางยาให้ประโยชน์ช่วยบำรุงร่างกาย ลดอาการร้อนใน เนื่องจากมีฤทธิ์เย็น แก้ช้ำใน 
+            แก้ไข้ตัวร้อน ช่วยสมานแผล ลดอาการอักเสบและบวม ช่วยทำให้เลือดแข็งตัวได้เร็วขึ้น บรรเทาอาการคันตามร่างกาย และยังมีส่วนช่วยยับยั้งการเกิดเซลล์มะเร็งอีกด้วย </p>
+            <button type="button" class="btn btn-secondary food-text mx-auto d-block">เรียนรู้เพิ่มเติม> </button>
           </div>
           <div class="col">
-            <img src="card-07.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" />
+            <img src="card-07.jpg" alt="food1" class="rounded-circle img-fluid mx-auto d-block" width="200" height="200" />
+            <p class="food-text p-5 text-center fs-6">มีสารต่อต้านอนุมูลอิสระช่วยเสริมสร้างภูมิต้านโรคในร่างกายให้แข็งแรง หน่อไม้มีเส้นใยสูง ป้องกันอาการท้องผูก 
+            ช่วยระบบขับถ่ายได้เป็นอย่างดี ช่วยลดการเกิดมะเร็งลำไส้ใหญ่ ล้วนมีสรรพคุณต่อสุขภาพร่างกายแทบทั้งสิ้น</p>
+            <button type="button" class="btn btn-secondary food-text mx-auto d-block">เรียนรู้เพิ่มเติม> </button>
           </div>
         </div>
       </div>
@@ -77,11 +86,9 @@ function Product() {
   };
 
   const data = [
-    ["กางเกงยีนส์", 1200],
-    ["เสื้อยืด", 350],
-    ["กางเกงขาสั้น", 450],
-    ["หมวก", 500],
-    ["ถุงเท้า", 100],
+    ["เมี่ยงคำกลีบบัวหลวงแบบโบราณ", 250],
+    ["แกงเห็ดเผาะไข่มดแดง", 350],
+    ["อู๋หน่อไม้พุงปลา", 300],
   ];
 
   return (
@@ -109,7 +116,7 @@ function Product() {
                 <td>{item[1]}</td>
                 <td className="text-center">
                   <Button variant="danger" onClick={() => DeleteRow(i)}>
-                    Delete
+                    เลือกเมนูนี้
                   </Button>
                 </td>
               </tr>
